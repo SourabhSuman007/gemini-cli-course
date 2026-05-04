@@ -266,3 +266,38 @@ h1, .hero-title {
   display: block; /* Added to allow margin auto to center */
   margin: 2rem auto 0 auto; /* Centered with top margin */
 }
+
+/* Tags Pills */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--background-light);
+  color: var(--text-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tag-pill .remove-tag {
+  background: none;
+  border: none;
+  color: var(--text-color-secondary);
+  margin-left: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.tag-pill .remove-tag:hover {
+  color: var(--primary-accent-color);
+}
